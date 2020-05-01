@@ -1,7 +1,8 @@
 {
   "name": "webpack-easy-mock-plugin",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "mock server plugin for webpack used koa and koa-router",
+  "repository": "https://github.com/flymoth/webpack-easy-mock-plugin.git",
   "main": "src/index.js",
   "scripts": {},
   "author": "flymoth",

@@ -75,10 +75,10 @@ module.exports = config;
 ## Demo
 
 ### 1.常规用法
-参考 [Demo](./demo)。
+参考 [Demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/demo)。
 
 ### 2.在Vue(vue-cli 3)中使用
-参考 [Vue-demo](./vue-demo)。
+参考 [Vue-demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/vue-demo)。
 
 ### 3.在React中使用
-参考 [React-demo](./react-demo)。
+参考 [React-demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/react-demo)。(若安装之后报缺少依赖的错误，将缺失的依赖安装上即可。)
