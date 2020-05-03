@@ -1,16 +1,16 @@
 # WebpackEasyMockPlugin
+[中文](./README_ZH.MD)
+
+A webpack plugin that uses koa and koa-router to build mock servers.
+
+# Scenes to be used
+
+When we are usually developing a project, because it is a front-end and back-end separation mode, when the interface is not written, we often need to mock the data ourselves. The role of this plugin is to serve as a node, and point your interface to the mock file you create, and return the data.
 
 
-一个使用koa和koarouter建立mock server的webpack插件。
+# Use
 
-# 使用场景
-
-我们平时在开发项目时，因为是前后端分离的模式，当接口没写完时，我们常常需要自己去mock数据。这个插件的作用就是起一个node服务，并把你的接口指向你定义的mock文件，并返回其中的数据。
-
-
-# 使用
-
-## 安装
+## Install
 
 ```
 // use npm 
@@ -20,9 +20,9 @@ yarn add webpack webpack-easy-mock-plugin --dev
 ```
 
 
-## 配置
+## Configuration
 
-### 1. webpack 配置
+### 1. webpack configuration
 
 ```javascript
 {
@@ -47,7 +47,7 @@ yarn add webpack webpack-easy-mock-plugin --dev
 }
 ```
 
-### 2. mock配置
+### 2. mock configuration
 
 ```javascript
 const path = require('path');
@@ -66,19 +66,18 @@ const config = {
 module.exports = config;
 ```
 
-### 3.说明
+### 3.Explanation
 
-`options.port` mock server 监听的端口，需不同于项目端口。
+`options.port` mock server The listening port needs to be different from the project port.
 
-`options.config` mock 数据的配置。key 是路径，就是对应 koa 的路由。值是 mock 数据，可以用 `data` 返回数据，也可以通过 `path` 指定 mock 文件位置。mock 文件为 json 文件。
-
+`options.config` Mock data configuration. The key is the path, which is the route corresponding to koa. The value is mock data. You can use `data` to return the data, or you can specify the location of the mock file via` path`. The mock file is a json file.
 ## Demo
 
-### 1.常规用法
-参考 [Demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/demo)。
+### 1.General usage
+ [Demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/demo)。
 
-### 2.在Vue(vue-cli 3)中使用
-参考 [Vue-demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/vue-demo)。
+### 2.Use in Vue(vue-cli 3)
+ [Vue-demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/vue-demo)。
 
-### 3.在React中使用
-参考 [React-demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/react-demo)。(若安装之后报缺少依赖的错误，将缺失的依赖安装上即可。)
+### 3.Use in React(create-react-app)
+ [React-demo](https://github.com/flymoth/webpack-easy-mock-plugin-demo/tree/master/react-demo)。(If an error of missing dependencies is reported after installation, install the missing dependencies.)

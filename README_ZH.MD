@@ -1,5 +1,5 @@
 # WebpackEasyMockPlugin
-
+[English](./README.MD)
 
 一个使用koa和koa-router建立mock server的webpack插件。
 
